@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAUL ENTERPRISES // ADVANCED SCIENCES DIVISION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- CRT Scanline Effect Overlay -->
+    <div class="scanlines"></div>
+
+    <header class="bat-header">
+        <div class="logo-area">
+            <span class="brand">KAUL ENTERPRISES</span>
+            <span class="division">TACTICAL R&D ENGINE [v5.01]</span>
+        </div>
+        <div class="status-grid">
+            <div class="status-item"><span class="label">SATELLITE:</span> <span class="val connection">CONNECTING...</span></div>
+            <div class="status-item"><span class="label">COWL_LINK:</span> <span class="val encryption">SECURE (AES-256)</span></div>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <!-- Sidebar Navigation -->
+        <section class="panel side-panel">
+            <h2 class="panel-title">SYSTEM DIRECTORY</h2>
+            <nav class="sys-menu">
+                <button class="menu-item active" data-target="suit">📂 [SYS_01] KAUL_ARMOR_INTEGRITY</button>
+                <button class="menu-item" data-target="sonar">📂 [SYS_02] SONAR_IMAGING</button>
+                <button class="menu-item" data-target="tumbler">📂 [SYS_03] PROPULSION_REAR</button>
+            </nav>
+            <div class="action-zone">
+                <button id="override-btn" class="btn warning">OVERRIDE SATELLITE FEED</button>
+            </div>
+        </section>
+
+        <!-- Live Tactical Main Data -->
+        <section class="panel main-panel">
+            <div id="suit-content" class="content-tab">
+                <h2 class="panel-title">SPECIFICATION: KAUL-ARMOR PLATING V5</h2>
+                <div class="spec-layout">
+                    <p class="alert-text">// WARNING: BALLISTIC SPLINTER DAMAGE DETECTED IN UPPER TORSO LAYER</p>
+                    <ul class="spec-list">
+                        <li><strong>Material Matrix:</strong> Hardened composite-graphite over raw Nomex weave layers.</li>
+                        <li><strong>Cowl Integration:</strong> Impact-resistant shell optimized for rapid cranial deceleration.</li>
+                        <li><strong>Joint Mechanics:</strong> Carbon-fiber reinforced hinge nodes for maximum combat mobility.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="sonar-content" class="content-tab hidden">
+                <h2 class="panel-title">DIAGNOSTIC: HIGH-FREQUENCY SONAR</h2>
+                <p>Mapping internal structural barriers using modified high-frequency wireless arrays.</p>
+                <div class="sonar-ping">
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                </div>
+            </div>
+
+            <div id="tumbler-content" class="content-tab hidden">
+                <h2 class="panel-title">VEHICLE LOG: BRIDGING VEHICLE V1</h2>
+                <p>Experimental jumping vehicle configured for heavy urban tactical deployments.</p>
+                <ul class="spec-list">
+                    <li><strong>Engine:</strong> 5.7 Liter Chevy LS1 V8 engine configuration.</li>
+                    <li><strong>Armor:</strong> Heavy plating panels designed for structural wall breaches.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Live Decryption Log Terminal -->
+        <section class="panel console-panel">
+            <h2 class="panel-title">GOTHAM POLICE BAND // CRYPTOGRAPHIC STREAM</h2>
+            <div class="terminal-box" id="terminal-output">
+                <div class="line text-green">[INIT] Establishing handshake with GCPD server...</div>
+            </div>
+        </section>
+    </main>
+    <script src="terminal.js"></script>
+</body>
+</html>
